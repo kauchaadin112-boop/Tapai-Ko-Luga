@@ -2,85 +2,198 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#111827">
-<title>Tapai Ko Luga — Tapai Ko Luga — Your Style, Your Choice</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tapai Ko Luga | Men's Fashion</title>
 <style>
-:root{--ink:#111827;--muted:#667085;--line:#e8eaf0;--bg:#f7f8fb;--brand:#6d5dfc;--brand2:#5143d9;--green:#138a62}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-button,input,select,textarea{font:inherit}button{cursor:pointer}.topbar{background:#111827;color:#fff;text-align:center;padding:9px 14px;font-size:12px;letter-spacing:.2px}
-header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}.nav{max-width:1120px;margin:auto;padding:16px 22px;display:flex;align-items:center;gap:22px}.logo{font-size:21px;font-weight:900;letter-spacing:-.8px;white-space:nowrap}.logo span{color:var(--brand)}.search{flex:1;position:relative}.search input{width:100%;border:1px solid var(--line);border-radius:12px;padding:12px 15px 12px 40px;background:#f8f9fc;outline:none}.search:before{content:"⌕";position:absolute;left:14px;top:5px;font-size:25px;color:#8991a3}.cartbtn,.primary,.secondary{border:0;border-radius:11px;padding:11px 15px;font-weight:750}.cartbtn{background:#f0efff;color:var(--brand2);white-space:nowrap}.hero{max-width:1120px;margin:25px auto 20px;padding:0 22px}.hero-inner{background:linear-gradient(115deg,#171b35,#393080 62%,#7669ff);border-radius:24px;padding:42px 42px;color:#fff;display:flex;align-items:center;justify-content:space-between;gap:25px;overflow:hidden;min-height:235px}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:1.8px;color:#d7d3ff;font-weight:800}.hero h1{font-size:clamp(30px,5vw,48px);line-height:1.04;letter-spacing:-1.8px;margin:12px 0;max-width:550px}.hero p{color:#e2e0ff;max-width:480px;line-height:1.6;margin:0 0 20px}.primary{background:#fff;color:#28205f}.hero-art{font-size:104px;min-width:180px;text-align:center;filter:drop-shadow(0 18px 18px #17133b77)}.section{max-width:1120px;margin:30px auto;padding:0 22px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:17px}.section h2{font-size:24px;letter-spacing:-.7px;margin:0}.sub{font-size:13px;color:var(--muted);margin-top:5px}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.filter{border:1px solid var(--line);background:#fff;border-radius:30px;padding:8px 14px;color:#475467;font-size:13px;font-weight:650}.filter.active{background:var(--ink);color:#fff;border-color:var(--ink)}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.product{background:#fff;border:1px solid var(--line);border-radius:17px;overflow:hidden;transition:.18s}.product:hover{transform:translateY(-3px);box-shadow:0 12px 28px #1820440d}.visual{height:155px;display:grid;place-items:center;font-size:62px;background:linear-gradient(145deg,#f0efff,#f9f8ff)}.visual.orange{background:linear-gradient(145deg,#fff0df,#fff9f1)}.visual.blue{background:linear-gradient(145deg,#e5f3ff,#f5faff)}.visual.green{background:linear-gradient(145deg,#e4f7ef,#f5fcf8)}.product-info{padding:14px}.tag{font-size:10px;color:var(--brand2);font-weight:800;text-transform:uppercase;letter-spacing:.8px}.product h3{font-size:14px;margin:6px 0 9px}.price-row{display:flex;align-items:center;justify-content:space-between;gap:8px}.price{font-weight:850;font-size:16px}.add{border:0;background:#f0efff;color:var(--brand2);border-radius:9px;padding:8px 11px;font-weight:800}.notice{background:#fff8e8;border:1px solid #f6e4b8;color:#75531a;border-radius:12px;padding:12px 14px;font-size:12px;line-height:1.5;margin-top:18px}.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}.trust div{background:#fff;border:1px solid var(--line);padding:16px;border-radius:14px;font-size:13px;font-weight:750}.trust span{display:block;color:var(--muted);font-weight:450;margin-top:4px;font-size:12px}footer{margin-top:45px;background:#111827;color:#fff;padding:30px 22px}.foot{max-width:1076px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.foot p{color:#aeb5c5;font-size:12px;line-height:1.6;max-width:430px}.foot a{color:#d8d5ff;text-decoration:none}.drawer-bg{position:fixed;inset:0;background:#10182866;z-index:10;display:none}.drawer{position:absolute;right:0;top:0;height:100%;width:min(430px,100%);background:#fff;padding:22px;overflow:auto;box-shadow:-15px 0 40px #10182822}.drawer-bg.open{display:block}.drawer-head{display:flex;justify-content:space-between;align-items:center}.close{border:0;background:#f1f2f6;border-radius:9px;padding:8px 12px}.cartline{display:flex;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid var(--line);font-size:13px}.qty{display:flex;align-items:center;gap:8px;margin-top:7px}.qty button{border:1px solid var(--line);background:#fff;border-radius:6px;width:25px;height:25px}.total{display:flex;justify-content:space-between;font-weight:850;padding:18px 0}.checkout{display:grid;gap:10px}.checkout input,.checkout textarea{border:1px solid var(--line);border-radius:10px;padding:11px;width:100%;outline-color:var(--brand)}.checkout label{font-size:12px;font-weight:750;color:#475467}.checkout .secondary{background:var(--brand);color:#fff}.empty{color:var(--muted);text-align:center;padding:38px 10px;font-size:14px}.small{font-size:11px;color:var(--muted);line-height:1.5}
-@media(max-width:800px){.grid{grid-template-columns:repeat(2,1fr)}.hero-inner{padding:30px 25px}.hero-art{font-size:76px;min-width:100px}.trust{grid-template-columns:1fr}.nav{gap:10px;padding:12px 15px}.logo{font-size:18px}.cartbtn{padding:10px}.search input{padding-right:7px}}
-@media(max-width:430px){.hero{margin-top:14px}.hero-inner{min-height:0;padding:27px 20px}.hero-art{font-size:54px;min-width:65px}.hero p{font-size:13px}.visual{height:125px;font-size:52px}.section{margin:24px auto}.grid{gap:10px}.product-info{padding:11px}.product h3{font-size:13px}}
+*{box-sizing:border-box}
+body{margin:0;background:#f7f7fa;color:#171827;font-family:Arial,sans-serif}
+.top{background:#171827;color:white;text-align:center;padding:10px;font-size:13px}
+header{background:white;padding:16px;display:flex;align-items:center;justify-content:space-between;gap:10px;position:sticky;top:0}
+.logo{font-size:22px;font-weight:900}
+.logo span{color:#705cff}
+button{cursor:pointer;border:0;border-radius:9px;padding:11px;font-weight:bold}
+.cart{background:#eeeaff;color:#5945d5}
+.search{padding:15px}
+.search input{width:100%;padding:13px;border:1px solid #ddd;border-radius:10px}
+.hero{margin:15px;padding:35px 22px;border-radius:20px;background:linear-gradient(120deg,#171827,#6251d9);color:white}
+.hero h1{font-size:38px;margin:12px 0}
+.hero p{line-height:1.6;color:#e1ddff}
+.hero button{background:white;color:#4434ae}
+.section{padding:15px}
+.filters{display:flex;gap:8px;overflow-x:auto;padding:15px 0}
+.filter{background:white;border:1px solid #ddd;white-space:nowrap}
+.filter.active{background:#171827;color:white}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.product{background:white;border-radius:13px;overflow:hidden;border:1px solid #eee}
+.photo{height:145px;display:grid;place-items:center;font-size:65px;background:#e9e7ff}
+.photo.green{background:#e2f3e9}
+.photo.orange{background:#fff0df}
+.info{padding:12px}
+.info h3{font-size:14px;margin:8px 0}
+.price{font-weight:900;margin:10px 0}
+.add{background:#eeeaff;color:#5945d5}
+.notice{background:#fff3d8;padding:13px;border-radius:10px;font-size:12px;line-height:1.5;margin-top:20px}
+footer{margin-top:35px;background:#171827;color:white;padding:25px}
+footer p{color:#bbb;font-size:13px;line-height:1.6}
+.drawer{display:none;position:fixed;inset:0;background:#0008;z-index:10}
+.panel{background:white;position:absolute;right:0;top:0;height:100%;width:min(400px,100%);padding:20px;overflow:auto}
+.cartitem{padding:12px 0;border-bottom:1px solid #ddd;font-size:14px}
+.panel input,.panel textarea{width:100%;padding:12px;margin:5px 0 12px;border:1px solid #ddd;border-radius:8px}
+.total{font-weight:bold;display:flex;justify-content:space-between;padding:15px 0}
+.order{width:100%;background:#705cff;color:white}
+@media(min-width:700px){.grid{grid-template-columns:repeat(4,1fr)}.hero{padding:55px}.section{max-width:1100px;margin:auto}}
 </style>
 </head>
 <body>
-<div class="topbar">Tapai Ko Luga • Your Style, Your Choice • Shopping in Nepal</div>
-<header><div class="nav">
-  <div class="logo">tapai<span>koluga.</span></div>
-  <div class="search"><input id="search" placeholder="Search products..." aria-label="Search products"></div>
-  <button class="cartbtn" id="openCart">🛒 Cart (<span id="cartCount">0</span>)</button>
-</div></header>
-<main>
-<section class="hero"><div class="hero-inner">
- <div><div class="eyebrow">Welcome to Tapai Ko Luga</div><h1>Your style.<br>Your choice.</h1><p>Discover useful everyday products in one easy place. Browse our starter collection and send an order request in a few taps.</p><button class="primary" onclick="document.getElementById('shop').scrollIntoView({behavior:'smooth'})">Explore products →</button></div>
- <div class="hero-art" aria-hidden="true">🛍️</div>
-</div></section>
-<section class="section" id="shop">
- <div class="section-head"><div><h2>Shop our collection</h2><div class="sub">A starter catalogue — products and prices need supplier confirmation.</div></div></div>
- <div class="filters" id="filters">
-  <button class="filter active" data-cat="All">All</button><button class="filter" data-cat="Mobile">Mobile</button><button class="filter" data-cat="Fashion">Fashion</button><button class="filter" data-cat="Lifestyle">Lifestyle</button><button class="filter" data-cat="Moto">Moto</button>
- </div>
- <div class="grid" id="products"></div>
- <div class="notice"><strong>Demo store notice:</strong> These are sample listings and illustrative prices, not confirmed stock or supplier offers. Replace them with real products, verified prices, delivery terms and your contact details before accepting customer orders.</div>
- <div class="trust"><div>📦 Clear order process<span>Confirm stock and delivery before payment.</span></div><div>💬 Helpful support<span>Customers can leave their contact details with an order.</span></div><div>🔒 Safer checkout<span>Never collect card PINs, passwords or OTP codes.</span></div></div>
+
+<div class="top">TAPAI KO LUGA • SHOPPING IN NEPAL</div>
+
+<header>
+<div class="logo">tapai<span>koluga.</span></div>
+<button class="cart" onclick="openCart()">🛒 Cart (<span id="count">0</span>)</button>
+</header>
+
+<div class="search">
+<input id="search" placeholder="Search men's clothing..." oninput="render()">
+</div>
+
+<section class="hero">
+<p>WELCOME TO TAPAI KO LUGA</p>
+<h1>Your style.<br>Your choice.</h1>
+<p>Discover men's fashion. Find your favourite everyday clothing and accessories.</p>
+<button onclick="document.getElementById('shop').scrollIntoView({behavior:'smooth'})">SHOP NOW →</button>
 </section>
-</main>
-<footer><div class="foot"><div><div class="logo">tapai<span>koluga.</span></div><p>Your Style, Your Choice. This is an initial demo storefront. Business contact, policies and supplier-verified listings must be added before launch.</p></div><div><strong>Customer care</strong><p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a><br>Instagram: @tapaikoluga<br>Delivery: confirm at order</p></div></div></footer>
-<div class="drawer-bg" id="drawerBg"><aside class="drawer">
- <div class="drawer-head"><h2 style="margin:0">Your cart</h2><button class="close" id="closeCart">✕</button></div>
- <div id="cartItems"></div><div id="cartBottom"></div>
-</aside></div>
+
+<section class="section" id="shop">
+<h2>Our Collection</h2>
+<p>Explore men's fashion essentials.</p>
+<div class="filters" id="filters">
+<button class="filter active" onclick="category('All',this)">All</button>
+<button class="filter" onclick="category('T-shirts',this)">T-shirts</button>
+<button class="filter" onclick="category('Shirts',this)">Shirts</button>
+<button class="filter" onclick="category('Hoodies',this)">Hoodies</button>
+<button class="filter" onclick="category('Jeans',this)">Jeans</button>
+<button class="filter" onclick="category('Trousers',this)">Trousers</button>
+<button class="filter" onclick="category('Jackets',this)">Jackets</button>
+<button class="filter" onclick="category('Accessories',this)">Accessories</button>
+</div>
+<div class="grid" id="products"></div>
+<div class="notice"><b>Demo notice:</b> These are example products and prices. Replace them with real stock, photos and verified prices before accepting orders.</div>
+</section>
+
+<footer>
+<div class="logo">tapai<span>koluga.</span></div>
+<p>Your Style, Your Choice.</p>
+<p>Instagram: @tapaikoluga</p>
+<p>Delivery across Nepal — charges confirmed before order acceptance.</p>
+</footer>
+
+<div class="drawer" id="drawer">
+<div class="panel">
+<button onclick="closeCart()">✕ Close</button>
+<h2>Your Shopping Cart</h2>
+<div id="items"></div>
+<div id="checkout"></div>
+</div>
+</div>
+
 <script>
 const products=[
-{id:1,name:"Everyday Phone Stand",cat:"Mobile",price:350,emoji:"📱",tone:"blue",desc:"A handy stand for your desk"},
-{id:2,name:"Protective Phone Case",cat:"Mobile",price:450,emoji:"📲",tone:"green",desc:"Simple everyday phone protection"},
-{id:3,name:"Classic Wallet",cat:"Fashion",price:650,emoji:"👛",tone:"orange",desc:"A compact everyday carry"},
-{id:4,name:"Everyday Cap",cat:"Fashion",price:500,emoji:"🧢",tone:"blue",desc:"A casual wardrobe staple"},
-{id:5,name:"Reusable Water Bottle",cat:"Lifestyle",price:550,emoji:"🧴",tone:"green",desc:"For work, study and travel"},
-{id:6,name:"Mini Desk Light",cat:"Lifestyle",price:850,emoji:"💡",tone:"orange",desc:"A little extra light for your desk"},
-{id:7,name:"Motorcycle Keychain",cat:"Moto",price:250,emoji:"🏍️",tone:"blue",desc:"A small accessory for riders"},
-{id:8,name:"Microfiber Cleaning Cloth",cat:"Moto",price:180,emoji:"🧽",tone:"green",desc:"For gentle everyday cleaning"}
+{id:1,name:"Classic Cotton T-shirt",cat:"T-shirts",price:650,emoji:"👕"},
+{id:2,name:"Casual Button-up Shirt",cat:"Shirts",price:1250,emoji:"👔"},
+{id:3,name:"Everyday Hoodie",cat:"Hoodies",price:1600,emoji:"🧥"},
+{id:4,name:"Classic Denim Jeans",cat:"Jeans",price:1800,emoji:"👖"},
+{id:5,name:"Casual Trousers",cat:"Trousers",price:1400,emoji:"👖"},
+{id:6,name:"Casual Jacket",cat:"Jackets",price:2200,emoji:"🧥"},
+{id:7,name:"Baseball Cap",cat:"Accessories",price:450,emoji:"🧢"},
+{id:8,name:"Everyday Belt",cat:"Accessories",price:550,emoji:"👔"}
 ];
-let cart={},activeCat="All";
-const fmt=n=>"Rs. "+n.toLocaleString("en-IN");
-function renderProducts(){
- const q=document.getElementById("search").value.toLowerCase();
- const list=products.filter(p=>(activeCat==="All"||p.cat===activeCat)&&(p.name+" "+p.cat+" "+p.desc).toLowerCase().includes(q));
- document.getElementById("products").innerHTML=list.length?list.map(p=>`<article class="product"><div class="visual ${p.tone}">${p.emoji}</div><div class="product-info"><div class="tag">${p.cat}</div><h3>${p.name}</h3><div class="price-row"><span class="price">${fmt(p.price)}</span><button class="add" onclick="addToCart(${p.id})">＋ Add</button></div></div></article>`).join(""):'<div class="empty" style="grid-column:1/-1">No products found. Try another search.</div>';
+
+let cart={},active="All";
+const money=n=>"Rs. "+n.toLocaleString("en-IN");
+
+function render(){
+let q=document.getElementById("search").value.toLowerCase();
+let list=products.filter(p=>(active==="All"||p.cat===active)&&p.name.toLowerCase().includes(q));
+document.getElementById("products").innerHTML=list.map(p=>`
+<div class="product">
+<div class="photo">${p.emoji}</div>
+<div class="info">
+<small>${p.cat}</small>
+<h3>${p.name}</h3>
+<div class="price">${money(p.price)}</div>
+<button class="add" onclick="add(${p.id})">＋ Add to cart</button>
+</div></div>`).join("")||"No products found.";
 }
-function addToCart(id){cart[id]=(cart[id]||0)+1;updateCart();document.getElementById("openCart").animate([{transform:"scale(1)"},{transform:"scale(1.06)"},{transform:"scale(1)"}],{duration:220});}
-function updateCart(){
- const count=Object.values(cart).reduce((a,b)=>a+b,0);document.getElementById("cartCount").textContent=count;
- const entries=products.filter(p=>cart[p.id]);const items=document.getElementById("cartItems");
- if(!entries.length){items.innerHTML='<div class="empty">Your cart is empty.<br>Add something you like from the collection.</div>';document.getElementById("cartBottom").innerHTML="";return;}
- items.innerHTML=entries.map(p=>`<div class="cartline"><div><strong>${p.name}</strong><div class="small">${fmt(p.price)} each</div><div class="qty"><button onclick="changeQty(${p.id},-1)">−</button><span>${cart[p.id]}</span><button onclick="changeQty(${p.id},1)">＋</button></div></div><strong>${fmt(p.price*cart[p.id])}</strong></div>`).join("");
- const total=entries.reduce((s,p)=>s+p.price*cart[p.id],0);
- document.getElementById("cartBottom").innerHTML=`<div class="total"><span>Estimated subtotal</span><span>${fmt(total)}</span></div><p class="small">Delivery charges and final availability will be confirmed before the order is accepted.</p><form class="checkout" id="orderForm"><label>Your name<input name="name" required placeholder="Full name"></label><label>Phone number<input name="phone" required inputmode="tel" placeholder="98XXXXXXXX"></label><label>Delivery address<textarea name="address" required rows="2" placeholder="Area, city and delivery details"></textarea></label><label>Extra note (optional)<input name="note" placeholder="Any product or delivery note"></label><button class="secondary" type="submit">Send order request</button><p class="small">This demo will prepare an order message. It does not take payment or confirm an order.</p></form>`;
- document.getElementById("orderForm").addEventListener("submit",submitOrder);
+
+function category(c,b){
+active=c;
+document.querySelectorAll(".filter").forEach(x=>x.classList.remove("active"));
+b.classList.add("active");
+render();
 }
-function changeQty(id,d){cart[id]=(cart[id]||0)+d;if(cart[id]<=0)delete cart[id];updateCart();}
-function submitOrder(e){
- e.preventDefault();const f=new FormData(e.target);const entries=products.filter(p=>cart[p.id]);const total=entries.reduce((s,p)=>s+p.price*cart[p.id],0);
- const lines=["TAPAI KO LUGA — ORDER REQUEST","Name: "+f.get("name"),"Phone: "+f.get("phone"),"Address: "+f.get("address"),"Items:",...entries.map(p=>`${p.name} x ${cart[p.id]} — ${fmt(p.price*cart[p.id])}`),"Estimated subtotal: "+fmt(total),"Note: "+(f.get("note")||"None"),"Please confirm stock, final price and delivery."];
- const blob=new Blob([lines.join("\n")],{type:"text/plain"});const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download="tapai-ko-luga-order-request.txt";a.click();URL.revokeObjectURL(url);
- alert("Order request downloaded. The store owner must contact the customer to confirm availability, total cost and delivery. No payment has been taken.");
+
+function add(id){
+cart[id]=(cart[id]||0)+1;
+update();
 }
-document.getElementById("filters").addEventListener("click",e=>{const b=e.target.closest("button[data-cat]");if(!b)return;activeCat=b.dataset.cat;document.querySelectorAll(".filter").forEach(x=>x.classList.toggle("active",x===b));renderProducts();});
-document.getElementById("search").addEventListener("input",renderProducts);
-document.getElementById("openCart").onclick=()=>document.getElementById("drawerBg").classList.add("open");
-document.getElementById("closeCart").onclick=()=>document.getElementById("drawerBg").classList.remove("open");
-document.getElementById("drawerBg").addEventListener("click",e=>{if(e.target.id==="drawerBg")e.currentTarget.classList.remove("open")});
-renderProducts();updateCart();
+
+function update(){
+let entries=products.filter(p=>cart[p.id]);
+document.getElementById("count").textContent=Object.values(cart).reduce((a,b)=>a+b,0);
+document.getElementById("items").innerHTML=entries.length?entries.map(p=>`
+<div class="cartitem">
+<b>${p.name}</b><br>${money(p.price)} × ${cart[p.id]}
+<br><button onclick="change(${p.id},-1)">−</button>
+<button onclick="change(${p.id},1)">＋</button>
+</div>`).join(""):"Your cart is empty.";
+
+let total=entries.reduce((s,p)=>s+p.price*cart[p.id],0);
+document.getElementById("checkout").innerHTML=entries.length?`
+<div class="total"><span>Subtotal</span><span>${money(total)}</span></div>
+<form onsubmit="order(event)">
+<label>Your name</label>
+<input name="name" required placeholder="Full name">
+<label>Phone number</label>
+<input name="phone" required placeholder="98XXXXXXXX">
+<label>Delivery address</label>
+<textarea name="address" required placeholder="Your address"></textarea>
+<button class="order">Prepare order request</button>
+</form>
+<p><small>Demo checkout only. No payment is collected.</small></p>`:"";
+}
+
+function change(id,n){
+cart[id]=(cart[id]||0)+n;
+if(cart[id]<=0)delete cart[id];
+update();
+}
+
+function openCart(){
+document.getElementById("drawer").style.display="block";
+update();
+}
+
+function closeCart(){
+document.getElementById("drawer").style.display="none";
+}
+
+function order(e){
+e.preventDefault();
+let f=new FormData(e.target);
+let lines=["TAPAI KO LUGA ORDER REQUEST","Name: "+f.get("name"),"Phone: "+f.get("phone"),"Address: "+f.get("address"),"Products:"];
+products.filter(p=>cart[p.id]).forEach(p=>lines.push(p.name+" x "+cart[p.id]+" = "+money(p.price*cart[p.id])));
+lines.push("Please confirm stock, delivery and final price.");
+let blob=new Blob([lines.join("\n")],{type:"text/plain"});
+let url=URL.createObjectURL(blob);
+let a=document.createElement("a");
+a.href=url;a.download="tapai-ko-luga-order.txt";a.click();
+URL.revokeObjectURL(url);
+alert("Order request downloaded. Please contact the store owner to confirm your order.");
+}
+
+render();
+update();
 </script>
-</body></html>
+</body>
+</html>
